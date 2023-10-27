@@ -31,11 +31,11 @@ WHERE FirstName LIKE 'J%';
 
 -- Find all Macbooks
 SELECT * FROM Products
-WHERE ProductName = 'Macbook';
+WHERE Name = 'Macbook';
 
 -- Find all products that are on sale
 SELECT * FROM Products
-WHERE IsOnSale = 1;
+WHERE OnSale = 1;
 
 -- Find the average price of all products
 SELECT AVG(Price) 
@@ -45,4 +45,4 @@ FROM Products;
 -- Find all Geek Squad employees who don't have a middle initial
 SELECT * FROM Employees
 WHERE MiddleInitial IS NULL 
-AND IsGeekSquad = 1;
+AND Title = 'Geek Squad';
